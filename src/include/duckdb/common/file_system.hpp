@@ -147,6 +147,7 @@ public:
 	FileSystem &file_system;
 	string path;
 	FileOpenFlags flags;
+	timestamp_t last_modified {0};
 
 	shared_ptr<Logger> logger;
 };
